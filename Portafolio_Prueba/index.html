@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*Inicia estilo de NavBar*/
+        .navbar{
+        background-color: #ffffff;
+        padding: 15px; 
+        margin: 0;
+         }
+
+        .navbar button {
+        background-color: #498B74;
+        color: #ffffff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        margin: 0;
+        }
+
+        .navbar button:hover {
+     background-color: #D24C4A; 
+        }
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+        /* Termina estilo de NavBar*/
+
+    
+
+        /* Inicia estilo de Inicio*/
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px; 
+        }
+
+        .card {
+            flex: 0 0 48%; 
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: none;
+        }
+        p{
+            text-align: center;
+            font-style: initial;
+            font-weight: 100;
+            font-size: 130px;
+        }    
+        #dev {
+            text-align: center;
+            font-style: initial;
+            font-weight: 100;
+            font-size: 60px;
+        }          
+        #btn1 { 
+            background-color:#85331E;
+            color: white;
+            border: none;
+            width: 100%;
+            font-weight: bold;
+            padding: 25px; 
+            font-size: 20px; 
+        }
+        
+        #btn2 { 
+            background-color:#C8733A;
+            color: white;
+            border: none;
+            width: 100%;
+            font-weight: bold;
+            padding: 20px; 
+            font-size: 20px; 
+        }
+        #btn3 { 
+            background-color:#D24C4A;
+            color: white;
+            border: none;
+            width: 100%;
+            font-weight: bold;
+            padding: 23px; 
+            font-size: 20px; 
+        }
+        #btn4 { 
+            background-color:#84A69D;
+            color: white;
+            border: none;
+            width: 100%;
+            font-weight: bold;
+            padding: 23px; 
+            font-size: 20px; 
+        }
+        #btn5 { 
+            background-color:#498B74;
+            color: white;
+            border: none;
+            width: 100%;
+            font-weight: bold;
+            padding: 23px; 
+            font-size: 20px; 
+        }
+        #btn6 { 
+            background-color:#567B57;
+            color: white;
+            border: black;
+            width: 100%;
+            font-weight: bold;
+            padding: 23px; 
+            font-size: 20px;             
+        }
+        /* Termina estilo de Inicio*/
+
+
+        /*Inicia estilo de Sobre mí */
+
+            #sobremicard{
+             text-align: center;
+             align-items: center;
+            }
+            .flash-animation {
+            width: 100px;
+            height: 100px;
+            animation: flash 0.3s ease-in-out infinite;
+            margin: 0 auto;
+            }
+            #sobremitexto{
+            text-align: center;
+            font-style: initial;
+            font-weight: 25px;
+            font-size: 30px;
+            padding-right:  250px;
+            padding-left:  250px;
+            padding-bottom:  0px;
+            padding-top:  0px;
+            }
+
+           @keyframes flash {
+           0%, 100% {
+           opacity: 1;
+           }
+           50% {
+           opacity: 0;
+           }}
+           /*Termina estilo Sobre mí*/
+
+             /*Aquí inicia estilo Educación*/
+
+             .card-section {
+            display: flex;
+            justify-content: space-around;
+            max-width: 800px;
+            margin: 0 auto;
+            }
+
+            .card-1,
+            .card-2,
+            .card-3 {
+            flex: 1;
+            text-align: center;
+            margin: 40px; 
+            padding: 20px; 
+            position: relative;
+           }
+           #educaciontexto{
+            text-align: center;
+            font-style: initial;
+            font-weight: 25px;
+            font-size: 20px;
+            padding-right:  250px;
+            padding-left:  250px;
+           }
+           /* Termina estilo de Educación*/
+
+
+           /*Inicia estilo de Proyectos*/
+           .card-section-1 {
+            display: flex;
+            justify-content: space-around;
+            max-width: 800px;
+            margin: 0 auto;
+            }
+
+            .card-3,
+            .card-4 {
+            flex: 1;
+            text-align: center;
+            margin: 40px; 
+            padding: 20px; 
+            position: relative;
+           }
+           #proyectostexto{
+            text-align: center;
+            font-style: initial;
+            font-weight: 25px;
+            font-size: 20px;
+            padding-right:  250px;
+            padding-left:  250px;
+           }
+           /* Termina estilo de Proyectos*/
+
+        /*Inicia estilo de Habilidades*/
+        .card-section-2 {
+            display: flex;
+            justify-content: space-around;
+            max-width: 800px;
+            margin: 0 auto;
+            }
+
+            .card-5,
+            .card-6 {
+            flex: 1;
+            text-align: center;
+            margin: 40px; 
+            padding: 20px; 
+            position: relative;
+           }
+           #proyectostexto{
+            text-align: center;
+            font-style: initial;
+            font-weight: 25px;
+            font-size: 20px;
+            padding-right:  250px;
+            padding-left:  250px;
+           }
+        /*Termina estilo de Habilidades*/
+
+        /*Inicia Formulario de Contacto*/
+        .contact-card {
+            background-color: #fff;
+            padding: 320px;
+            padding-top: 0;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif; 
+        }
+          .contact-box {
+           background-color: #fff;
+           padding: 20px;
+           max-width: 400px; 
+           width: 100%;
+           text-align: center;
+           }
+
+          .contact-form {
+          text-align: left; 
+          }
+
+          form {
+          display: flex;
+          flex-direction: column;
+         }
+
+          label {
+          margin-top: 10px;
+        }
+
+          input,
+          textarea {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          margin-bottom: 15px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        
+       }
+
+        textarea {
+        resize: vertical;
+        }
+
+        button {
+        background-color:#498B74;
+         color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+       }
+
+        button:hover {
+        background-color: #D24C4A;
+}
+        /*Termina Formulario de Contacto*/
+
+        /* Inicia breakpoint responsive */
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .card {
+                flex: 0 0 100%;
+            }
+
+            p, #dev {
+                font-size: 50px;
+            }
+
+            .card-section {
+                flex-direction: column;
+            }}
+
+            /*Termina breakpoint responsive*/
+            
+    </style>
+    
+    <title>Portafolio ZSP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+
+</head>
+ <!--Aquí comienza NavBar-->
+ 
+<nav class="navbar navbar-light bg-light">
+    <div class="container fluid">
+      <form class="d-flex">
+        <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+        <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+<body>
+  <!--Aquí termina NavBar-->
+
+  <p class="text-center" class="font-family Montserrat" class="font-size bold">ZURISADAI SANTOS</p>
+  <p class="text-center" class="font-family Montserrat" class="font-size bold" id="dev">Java Full Stack Developer Jr</p>
+
+<!--Inicia Inicio-->
+<section class="Inicio" id="Inicio">
+<div class="container">
+    <div class="card" id="cardleft">
+    
+        <button class="btn btn-primary" id="btn1" type="button">Inicio</button><br>
+        <button onclick="location.href='#sobremi'" class="btn btn-primary" id="btn2" type="button" >Sobre mí</button><br>
+        <button onclick="location.href='#Educacion'" class="btn btn-primary" id="btn3" type="button">Educación</button><br>
+        <button onclick="location.href='#Proyectos'" class="btn btn-primary" id="btn3"class="btn btn-primary" id="btn4" type="button">Proyectos</button><br>
+        <button onclick="location.href='#Habilidades'"class="btn btn-primary" id="btn5" type="button">Habilidades</button><br>
+        <button onclick="location.href='#Contacto'"class="btn btn-primary" id="btn6" type="button">Contacto</button><br>
+    </div>
+    <div class="card" id="cardright">
+     <img src="./src/399874664_1107517740698158_7873615101555103827_n.jpg">
+    </div>
+</div>
+</section>
+<hr>
+<!--Aquí termina Inicio-->
+
+<!--Aquí inicia Sobre mí-->
+<section class="SobreMi" id="sobremi"></section>
+<div class="card" id="sobremicard">
+    <p class="text-center" class="font-family Montserrat" class="font-size bold" id="dev">Sobre mí</p>
+    <div class="flash-animation">
+        <a href="#Inicio">
+    <img class="image" src="./src/Diseño sin título (5).png"alt="" width="70" height="70">
+        </a>
+</div>
+    <p class="centered-text" id="sobremitexto">Soy una apasionada de la literatura convertida en desarrolladora web con un fuerte deseo de marcar
+         una diferencia en el mundo digital. Mi viaje comenzó con mis estudios en el área humanidades donde descubrí el gusto por las estructuras del lenguaje,
+         la importancia de la comunicación, además de la complejidad de las problemáticas sociales.
+         Como desarrolladora web, combino la creatividad y la resolución de problemas para crear experiencias digitales significativas
+         para garantizar que mis proyectos sean accesibles para todos y todas.
+        Lo que me impulsa es el deseo de abordar problemáticas sociales a través de la tecnología.
+        Creo firmemente en el poder de la tecnología para generar un cambio positivo y me esfuerzo por usar mis habilidades para contribuir a un mundo justo e inclusivo.</p>
+        
+</div>
+
+</section>
+<hr>
+<!--Aquí termina sobre mí-->
+
+<!--Aquí inicia Educación-->
+
+<section class="Educacion" id="Educacion">
+    <p class="text-center" class="font-family Montserrat" class="font-size bold" id="dev">Educación</p>
+    <div class="flash-animation">
+        <a href="#Inicio">
+    <img class="image" src="./src/Diseño sin título (5).png"alt="" width="70" height="70">
+        </a>
+</div>
+
+    <div class="card-section">
+        <div class="card-1">
+            <img class="image" src="./src/3.png" alt="Generation" width="200" height="200">
+            <p class="card-text" id="educaciontexto">Entrenamiento TI en Java Full Stack Developer Jr.</p>
+        </div>
+
+        <div class="card-2">
+            <img class="image" src="./src/2.png" alt="Fundacion" width="200">
+            <p class="card-text"id="educaciontexto">Diplomado en Desarrollo sitios web y aplicaciones.</p>
+        </div>
+
+        <div class="card-3">
+            <img class="image" src="./src/4.png" alt="UNAM" width="200" height="200">
+            <p class="card-text"id="educaciontexto">Licenciatura en literatura Intercultural.</p>
+        </div>
+    </div>
+</section>
+<hr>
+<!--Aquí termina Educación-->
+
+<!--Aquí inicia Proyectos-->
+
+<section class="Proyectos" id="Proyectos">
+    <p class="text-center" class="font-family Montserrat" class="font-size bold" id="dev">Proyectos</p>
+    <div class="flash-animation">
+        <a href="#Inicio">
+    <img class="image" src="./src/Diseño sin título (5).png"alt="" width="70" height="70">
+        </a>
+</div>
+
+    <div class="card-section-1">
+        <div class="card-3">
+            <img class="image" src="./src/logoljdm.png" alt="LHDMI" width="200" height="200">
+            <p class="card-text" id="proyectostexto">Galería de arte digital Las hijas de María Izquierdo.</p>
+        </div>
+
+        <div class="card-4">
+            <img class="image" src="./src/Logo de festival feminista azul brillante y fucsia tipográfico.png" alt="CC" width="200">
+            <p class="card-text"id="proyectostexto">Centro Comunitario Ganesha.</p>
+        </div>
+
+    </div>
+</section>
+<hr>
+<!--Aquí termina Proyectos-->
+
+<!--Aquí inicia Habilidades-->
+<section class="Habilidades" id="Habilidades">
+    <p class="text-center" class="font-family Montserrat" class="font-size bold" id="dev">Habilidades</p>
+    <div class="flash-animation">
+        <a href="#Inicio">
+    <img class="image" src="./src/Diseño sin título (5).png"alt="" width="70" height="70">
+        </a>
+</div>
+        <div class="card-section-2">
+            <div class="card-5">
+                <img src="./src/html-5.png" alt="Ícono A" class="icon-1" width="70" height="70">
+                <img src="./src/css-3.png" alt="Ícono B" class="icon-2" width="70" height="70">
+                <img src="./src/js.png" alt="Ícono C" class="icon-3" width="70" height="70">   
+                <img src="./src/java.png" alt="Ícono B" class="icon-4" width="70" height="70">
+                <img src="./src/git.png" alt="Ícono C" class="icon-5" width="70" height="70"> 
+                <img src="./src/github.png" alt="Ícono B" class="icon-6" width="70" height="70">
+                <img src="./src/figma.png" alt="Ícono C" class="icon-7" width="70" height="70">
+                <img src="./src/plataforma-linux.png" alt="Ícono C" class="icon-8" width="70" height="70"> 
+                <img src="./src/logotipo-de-windows.png" alt="Ícono C" class="icon-9" width="70" height="70"> 
+            </div>
+        </div>   
+            <div class="card-6">
+                <img src="./src/orientacion.png" alt="Ícono A" class="icon-1" width="70" height="70">
+                <img src="./src/planeacion.png" alt="Ícono B" class="icon-2" width="70" height="70">
+                <img src="./src/usuario.png" alt="Ícono C" class="icon-3" width="70" height="70">   
+                <img src="./src/trabajo-en-equipo.png" alt="Ícono B" class="icon-4" width="70" height="70">
+            </div>
+        </div>
+</section>
+<hr>
+<!--Aquí termina Habilidades-->
+
+<!--Aquí inicia Contacto-->
+<section class="contact-section" id="Contacto">
+    <p class="text-center" class="font-family Montserrat" class="font-size bold" id="dev">Contacto</p>
+    <div class="flash-animation">
+        <a href="#Inicio">
+    <img class="image" src="./src/Diseño sin título (5).png"alt="" width="70" height="70">
+        </a>
+</div>
+    <div class="contact-card">
+        <h2>Trabajemos junt_s</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" rows="6" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!--Aquí termina Contacto-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
